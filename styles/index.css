@@ -952,6 +952,8 @@ body {
 
     .service-box {
         padding: 6px;
+
+        grid-template-rows: .25fr .25fr .25fr;
     }
 
     .box-placeholder {
