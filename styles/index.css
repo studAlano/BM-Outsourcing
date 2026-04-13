@@ -291,6 +291,7 @@ body {
 
     border-radius: 24px 50px 250px 50px;
     overflow: hidden;
+    z-index: -1;
 
     display: flex;
     justify-content: center;
@@ -410,6 +411,7 @@ body {
     border-radius: 24px;
     border: none;
     padding: 12px 24px;
+    z-index: -1;
 
     display: flex;
     flex-direction: column;
@@ -497,6 +499,132 @@ body {
 }
 
 
+.testimonial {
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 6rem;
+}
+
+.ttm-container {
+    width: 100%;
+    height: 85vh;
+
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+    gap: 24px;
+    padding: 12px 36px;
+}
+
+.ttm-box {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    width: 400px;
+    height: 500px;
+
+    position: relative;
+    z-index: -1;
+}
+
+.profile::before {
+    content: '';
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50px;
+    border: none;
+
+    background-color: var(--accent-color);
+
+    position: absolute;
+    right: -50px;
+    bottom: -25px;
+    z-index: 1;
+
+    filter: var(--filter-orange);
+
+}
+
+.profile .ttm-profile-img {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    filter: var(--filter-dark);
+}
+
+.profile .ttm-profile-img .profile-img {
+    width: 100%;
+}
+
+.ttm-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    padding: 24px;
+}
+
+.ttm-details .desc {
+    font-size: calc(var(--sub-n-desc-size) + .5em);
+}
+
+.ttm-details .name {
+    font-size: calc(var(--sub-n-desc-size) + .25em);
+    font-weight: 700;
+}
+
+.ttm-details .position {
+    font-size: var(--sub-n-desc-size);
+    font-weight: 500;
+}
+
+.ttm-details span {
+    color: var(--text-color);
+}
+
+.ttm-details .profile-socials {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.ttm-details .profile-socials .profile-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    font-size: calc(var(--sub-n-desc-size) - 2.5px);
+    gap: 6px;
+}
+
+.ttm-details .profile-socials .profile-link img {
+    width: 20px;
+}
+
+
+
 
 /* ========================================
    RESPONSIVE DESIGN - MEDIA QUERIES
@@ -544,6 +672,73 @@ body {
 
     .btn {
         width: 20%;  
+    }
+
+    .service-box {
+        padding: 6px;
+    }
+
+    .testimonial {
+        height: auto;
+    }
+
+    .ttm-container {
+        height: auto;
+    }
+
+    .profile {
+        width: 350px;
+        height: 450px;
+    }
+
+    .profile::before {
+        width: 75px;
+        height: 75px;
+
+        right: -35px;
+        bottom: -15px;
+    }
+
+    .ttm-details .desc {
+        font-size: calc(var(--sub-n-desc-size) - .05em);
+    }
+
+    .ttm-details .name {
+        font-size: calc(var(--sub-n-desc-size) - .1em);
+        font-weight: 700;
+    }
+
+    .ttm-details .position {
+        font-size: calc(var(--sub-n-desc-size) - .2em);
+        font-weight: 500;
+    }
+
+    .ttm-details span {
+        color: var(--text-color);
+    }
+
+    .ttm-details .profile-socials {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        gap: 24px;
+    }
+
+    .ttm-details .profile-socials .profile-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        color: var(--secondary-color);
+
+        font-size: calc(var(--sub-n-desc-size) - 2.5px);
+        gap: 6px;
+    }
+
+    .ttm-details .profile-socials .profile-link img {
+        width: 20px;
     }
 }
 
@@ -648,6 +843,15 @@ body {
         padding: var(--btn-padding);
 
         gap: 6px;
+    }
+
+    .testimonial {
+        height: auto;
+    }
+
+    .ttm-container {
+        height: auto;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -978,5 +1182,51 @@ body {
 
     .box-anchor .btn-box .anchor {
         display: none;
+    }
+
+    .testimonial {
+        height: auto;
+    }
+
+    .ttm-container {
+        height: auto;
+
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+
+    .profile {
+        width: 300px;
+        height: 400px;
+    }
+
+    .profile::before {
+        width: 75px;
+        height: 75px;
+
+        right: -25px;
+        bottom: -15px;
+    }
+
+    .ttm-details .desc {
+        font-size: var(--sub-n-desc-size);
+    }
+
+    .ttm-details .name {
+        font-size: var(--sub-n-desc-size);
+    }
+
+    .ttm-details .position {
+        font-size: calc(var(--sub-n-desc-size) - .25em);
+    }
+
+    .ttm-details .profile-socials {
+        gap: 12px;
+    }
+
+    .ttm-details .profile-socials .profile-link {
+        font-size: calc(var(--sub-n-desc-size) - .5em);
+        gap: 6px;
     }
 }
