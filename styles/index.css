@@ -839,8 +839,6 @@ body {
     width: 55%;
     height: 100%;
 
-    border: 1px solid green;
-
     padding: 12px;
 }
 
@@ -902,6 +900,50 @@ body {
     font-size: .75em;
 
     cursor: pointer;
+}
+
+.about-links .about-credit-links {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 12px;
+}
+
+.center {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.center .title {
+    font-size: calc(var(--title-size) - 2em);
+    font-weight: 600;
+
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+}
+
+.center ul {
+    list-style: none;
+}
+
+.center ul li {
+    margin-bottom: 6px;
+}
+
+.center ul li a {
+    font-size: calc(var(--sub-n-desc-size) - 2.5px);
+    font-weight: 400;
+
+    color: var(--desc-color);
+    text-decoration: none;
+
+    padding-left: 6px;
 }
 
 
@@ -1163,8 +1205,6 @@ body {
 
     .about {
         height: auto;
-
-        border: 1px solid red;
     }
 
     .about-container {
@@ -1181,6 +1221,8 @@ body {
 
     .about-container .about-links {
         width: 100%;
+
+        padding-top: 2rem;
     }
 }
 
@@ -1235,7 +1277,7 @@ body {
 
     .mb-nav-bar {
         position: absolute;
-        top: 0;
+        top: -24px;
         right: 0;
 
         z-index: 999;
@@ -1605,5 +1647,17 @@ body {
 
     .career-btn .career-browse img {
         width: 18px;
+    }
+
+    .about .about-logo .title {
+        font-size: calc(var(--title-size) - 1.25em);
+    }
+
+    .center .title {
+        font-size: calc(var(--title-size) - 2.25em);
+    }
+
+    .center ul li a {
+        font-size: calc(var(--sub-n-desc-size) - 5px);
     }
 }
