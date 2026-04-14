@@ -67,6 +67,7 @@ body {
 
     position: fixed;
     top: 24px;
+    z-index: 10;
 }
 
 .nav-bar {
@@ -79,6 +80,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-self: center;
+    z-index: 10;
 
     border-radius: 50px;
     padding: 0 12px;
@@ -412,7 +414,6 @@ body {
     border-radius: 24px;
     border: none;
     padding: 12px 24px;
-    z-index: -1;
 
     display: flex;
     flex-direction: column;
@@ -643,7 +644,6 @@ body {
     align-items: center;
 
     position: relative;
-    z-index: -1;
 }
 
 .careers .career-container::after {
@@ -759,6 +759,151 @@ body {
 .career-btn .career-browse img {
     width: 24px;
 }
+
+.about {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 6rem;
+}
+
+.about-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+    gap: 12px;
+}
+
+.about .buffer {
+    width: 100%;
+    height: 75px;
+
+    background-color: var(--secondary-color);
+}
+
+.about-container .about-content {
+    width: 45%;
+    height: 100%;
+
+    padding: 0 36px;
+}
+
+.about-content .about-logo {
+    width: 100%;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    gap: 24px;
+}
+
+.about-logo .about-icon {
+    width: 75px;
+}
+
+.about-content p {
+    text-align: justify;
+}
+
+.about-content .about-social-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.about-social-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.about-social-links .about-link {
+    width: 50px;
+}
+
+.about-container .about-links {
+    width: 55%;
+    height: 100%;
+
+    border: 1px solid green;
+
+    padding: 12px;
+}
+
+.about-links .newsletter {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.newsletter form label {
+    font-size: 1.25em;
+    font-weight: 700;
+
+    color: var(--secondary-color);
+}
+
+.newsletter form .input-box {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.newsletter form .input-box input {
+    width: 100%;
+    height: 45px;
+    
+    padding-left: 12px;
+
+    border: 1px solid var(--drop-shadow-dark-color);
+    border-radius: var(--btn-box-border-radius);
+
+    font-size: 1em;
+}
+
+.newsletter form .input-box button {
+    background-color: var(--accent-color);
+    filter: var(--filter-orange);
+
+    border: none;
+    border-radius: var(--btn-circle-border-radius);
+    padding: var(--btn-padding);
+
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: .75em;
+
+    cursor: pointer;
+}
+
 
 
 /* ========================================
@@ -1014,6 +1159,28 @@ body {
 
     .career-btn .career-anchor {
         font-size: 1em;
+    }
+
+    .about {
+        height: auto;
+
+        border: 1px solid red;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about .buffer {
+        height: 50px;
+    }
+
+    .about-container .about-content {
+        width: 100%;
+    }
+
+    .about-container .about-links {
+        width: 100%;
     }
 }
 
