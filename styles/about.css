@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --body-color: #f6f6f6;
+
+    --primary-color: #FDFDFD;
+    --secondary-color: #0F172A;
+    --accent-color: #F86E26;
+    --light-accent-color: #fb7f3c;
+
+    --accent-transparent-color: rgba(248, 112, 38, 0.1);
+
+    --transparent-color: rgba(253, 253, 253, 0.155);
+    --drop-shadow-dark-color: rgba(15, 23, 42, 0.45);
+    --drop-shadow-orange-color: rgba(248, 112, 38, 0.45);
+
+    --text-color: #FBAF39;
+    --desc-color: #0f172a99;
+
+    --font-family: 'Poppins', sans-serif;
+    --title-font-family: 'Jost', sans-serif;
+
+    --title-size: 3em;
+    --word-spacing: 6px;
+    --letter-spacing: 1.5px;
+    --sub-n-desc-size: 1em;
+
+    --filter-dark: drop-shadow(0 12px 24px var(--drop-shadow-dark-color));
+    --filter-orange: drop-shadow(0 2px 6px var(--drop-shadow-orange-color));
+
+
+    --btn-padding: 0.75rem 1.5rem;
+    --mb-btn-padding: 0.5rem 1rem;
+
+    --btn-box-border-radius: 12px;
+    --btn-circle-border-radius: 50px;
+
+    --mb-btn-box-border-radius: 10px;
+    --mb-btn-circle-border-radius: 25px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+
+    position: relative;
+}
+
+.parent-container {
+    width: 100%;
+    height: 100vh;
+
+    padding: 0 36px;
+}
+
+.sub-title {
+    font-size: var(--sub-n-desc-size);
+    font-weight: 300;
+
+    color: var(--text-color);
+
+    letter-spacing: 6px;
+}
+
+.title {
+    font-size: var(--title-size);
+    font-weight: 800;
+
+    color: var(--secondary-color);
+
+    line-height: 1.2;
+}
+
+.title span {
+    color: var(--text-color);
+}
+
+.desc {
+    font-size: var(--sub-n-desc-size);
+    font-weight: 400;
+
+    color: var(--desc-color);
+}
+
+/* Section: Info */
+
+.about {
+    padding-top: 36px;
+}
+
+.about .home {
+    width: 100%;
+}
+
+.home .home-container {
+    width: fit-content;
+
+    padding: 6px 12px;
+    border-radius: 24px;
+
+    background-color: var(--primary-color);
+    filter: var(--filter-dark);
+}
+
+.about .info {
+    width: 100%;
+    height: 50vh;
+
+    padding: 6px;
+    position: relative;
+
+    background-color: transparent;
+    overflow: hidden;
+    filter: var(--filter-dark);
+
+    border-radius: 24px;
+}
+
+.info .info-figure {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    clip-path: path("M 0,125 A 25,25 0,0,1 25,100 L 250,100 A 25,25 0,0,0 275,75 L 275,25 A 25,25 0,0,1 300,0 L 1500,0 L 1500,425 L 0,425 Z");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .info-figure .info-img {
+    width: 100%;
+}
+
+
+
+
+
+/* ====== LARGE DESKTOP (1025px and above) ====== */
+@media (max-width: 2561px) {
+
+}
+
+/* SMALL DESKTOP */
+@media (max-width: 1025px) {
+
+}
+
+/* TABLET */
+@media (max-width: 769px) {
+
+}
+
+/* ====== EXTRA SMALL DEVICES (max-width: 480px) ====== */
+@media (max-width: 426px) {
+
+}
+
