@@ -361,6 +361,244 @@ body {
     text-align: center;
 }
 
+.career {
+    width: 100%;
+    height: 75vh;
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.career .career-text {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--accent-color);
+}
+
+.career .career-text .title {
+    color: var(--primary-color);
+}
+
+.career .career-text .desc {
+    color: var(--primary-color);
+}
+
+.career .career-text .career-btn {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.career .career-text .career-btn .career-btn-box {
+    padding: var(--btn-padding);
+
+    border: none;
+    border-radius: var(--btn-circle-border-radius);
+}
+
+.career .career-text .career-btn .btn-explore {
+    background-color: transparent;
+
+    border: 2px solid var(--primary-color);
+}
+
+.career .career-text .career-btn .btn-apply {
+    background-color: var(--primary-color);
+
+    filter: var(--filter-dark);
+}
+
+.career .career-text .career-btn .career-btn-box .career-anchor {
+    color: var(--primary-color);
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.career .career-text .career-btn .career-btn-box .apply {
+    color: var(--accent-color);
+}
+
+.links {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4rem 2rem;
+}
+
+.links .links-parent {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    gap: 2rem;
+}
+
+.links .links-parent .links-content {
+    width: 100%;
+    height: 100%;
+}
+
+.links .links-parent .brand .logo {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.links .links-parent .brand .logo .logo-icon {
+    width: 100px;
+}
+
+.links .links-parent .brand .logo .title {
+    font-size: 2.5em;
+    font-weight: 800;
+
+    color: var(--text-color);
+
+    margin-left: 1rem;
+}
+
+.links .links-parent .brand .social-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.links .links-parent .brand .social-links .social-anchor .social-icon {
+    width: 4rem;
+}
+
+.links .links-parent .quick-links .newsletter {
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.links .links-parent .quick-links .newsletter form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.links .links-parent .quick-links .newsletter form label {
+    font-size: 1.25em;
+    font-weight: 700;
+
+    color: var(--secondary-color);
+}
+
+.links .links-parent .quick-links .newsletter form .input-box {
+    width: 500px;
+    height: auto;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.links .links-parent .quick-links .newsletter form .input-box input {
+    width: 100%;
+    height: 45px;
+    
+    padding-left: 12px;
+
+    border: 1px solid var(--drop-shadow-dark-color);
+    border-radius: var(--btn-box-border-radius);
+
+    font-size: 1em;
+}
+
+.links .links-parent .quick-links .newsletter form .input-box button {
+    background-color: var(--accent-color);
+    filter: var(--filter-orange);
+
+    border: none;
+    border-radius: var(--btn-circle-border-radius);
+    padding: var(--btn-padding);
+
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: .75em;
+
+    cursor: pointer;
+}
+
+.links .links-parent .quick-links .links-box {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+.links .links-parent .quick-links .center {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.links .links-parent .quick-links .center .title {
+    font-size: calc(var(--title-size) - 2em);
+    font-weight: 600;
+
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+}
+
+.links .links-parent .quick-links .center ul {
+    list-style: none;
+}
+
+.links .links-parent .quick-links .center ul li {
+    margin-bottom: 6px;
+}
+
+.links .links-parent .quick-links .center ul li a {
+    font-size: calc(var(--sub-n-desc-size) - 2.5px);
+    font-weight: 400;
+
+    color: var(--desc-color);
+    text-decoration: none;
+
+    padding-left: 6px;
+}
+
+
+
 
 
 
@@ -422,6 +660,59 @@ body {
 
     .values .values-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .career .career-text {
+        padding: 0 6rem;
+    }
+
+    .career .career-text .title {
+        font-size: 2.75em;
+    }
+
+    .career .career-text .desc {
+        font-size: 1em;
+    }
+
+    .links {
+        padding: 2rem 1rem;
+    }
+
+    .links .links-parent {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .links .links-parent .brand .logo .logo-icon {
+        width: 50px;
+    }
+
+    .links .links-parent .brand .logo .title {
+        font-size: 1.75em;
+    }
+
+    .links .links-parent .brand .social-links {
+        gap: 1rem;
+    }
+
+    .links .links-parent .brand .social-links .social-anchor .social-icon {
+        width: 2rem;
+    }
+
+    .links .links-parent .quick-links .newsletter form .input-box {
+        width: 350px;
+    }
+
+    .links .links-parent .quick-links .links-box {
+        gap: 2rem;
+    }
+
+    .links .links-parent .quick-links .center .title {
+        font-size: calc(var(--title-size) - 2.75em);
+    }
+
+    .links .links-parent .quick-links .center ul li a {
+        font-size: calc(var(--sub-n-desc-size) - 5px);
     }
 
 }
@@ -534,6 +825,69 @@ body {
 
     .values .values-text .title {
         font-size: 2em;
+    }
+
+    .career {
+        height: auto;
+    }
+
+    .career .career-text {
+        padding: 4rem 2rem;
+    }
+
+    .career .career-text .title {
+        font-size: 2.25em;
+    }
+
+    .career .career-text .desc {
+        font-size: .75em;
+    }
+
+    .career .career-text .career-btn .career-btn-box {
+        padding: var(--mb-btn-padding);
+
+        border-radius: var(--mb-btn-circle-border-radius);
+    }
+
+    .links {
+        padding: 2rem 1rem;
+    }
+
+    .links .links-parent {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .links .links-parent .brand .logo .logo-icon {
+        width: 50px;
+    }
+
+    .links .links-parent .brand .logo .title {
+        font-size: 1.75em;
+    }
+
+    .links .links-parent .brand .social-links {
+        gap: 1rem;
+    }
+
+    .links .links-parent .brand .social-links .social-anchor .social-icon {
+        width: 2rem;
+    }
+
+    .links .links-parent .quick-links .newsletter form .input-box {
+        width: 350px;
+    }
+
+    .links .links-parent .quick-links .links-box {
+        gap: 2rem;
+    }
+
+    .links .links-parent .quick-links .center .title {
+        font-size: calc(var(--title-size) - 2.75em);
+    }
+
+    .links .links-parent .quick-links .center ul li a {
+        font-size: calc(var(--sub-n-desc-size) - 5px);
     }
 
 }
