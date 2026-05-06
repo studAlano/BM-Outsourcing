@@ -1003,6 +1003,11 @@ body {
     .btn {
         width: 20%;   
     }
+
+    .home {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 /* ====== SMALL DESKTOP (768px - 1024px) ====== */
 @media (max-width: 1025px) {
